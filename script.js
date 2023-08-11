@@ -29,7 +29,7 @@ input.onkeyup = function() {
 }
 
 async function getPkmn(){
-	let res = await fetch("https://dazzabound.github.io/pokemon-type-lookup/pkmn.json");
+	let res = await fetch("https://dazzabound.github.io/pokemon-type-matchup/pkmn.json");
 	pkmn = await res.json();
 }
 
