@@ -327,8 +327,9 @@ function addPkmn(p) {
   });
   let tableCard = document.createElement("div");
   tableCard.id = i.id;
-  tableCard.classList.add("tableGrid");
-    
+  tableCard.classList.add("tableGrid","pokeRow");
+  tableCard.setAttribute("onclick","removePkmn('"+i.id+"')")
+
   let types = "";
   i.types.forEach(function(t){
     types += "<div class='text"+t+" typeBox'>"+t.charAt(0).toUpperCase()+t.slice(1)+"</div>"
@@ -375,7 +376,7 @@ i.types.forEach(function(t){
       if( s=== 2){tableCard.innerHTML += "<div class='typeEff eff2'>x4</div>"; weakArray[index] += 1}
   });
   
-  document.getElementById("tableContent").append(tableCard);
+  document.getElementById("tableContent").appendChild(tableCard);
 // RESET EXCLUDED LIST
 
   excluded = [];
@@ -412,4 +413,51 @@ function addStats(){
   document.getElementById("tableStats").append(resistRow)
   document.getElementById("tableStats").append(weakRow)
 
+}
+
+
+function removePkmn(r) {
+  document.getElementById(r).remove();
+
+  excluded = [];
+  for(let i of document.querySelectorAll("#tableContent > div")) {
+    excluded.push(i.id)
+  };
+
+  let i = pkmn.find(function(a){
+    return a.id === r;
+  });
+
+  let typeScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+  i.types.forEach(function(t){
+    if(effectiveness[t].weak){
+      effectiveness[t].weak.forEach(function(w){
+        typeScore[effectiveness[w].id] += 1;
+      });
+    };
+  });
+  
+  i.types.forEach(function(t){
+    if(effectiveness[t].resist){
+      effectiveness[t].resist.forEach(function(r){
+        typeScore[effectiveness[r].id] += -1;
+      });
+    };
+  });
+  
+  i.types.forEach(function(t){
+    if(effectiveness[t].immune){
+      effectiveness[t].immune.forEach(function(i){
+        typeScore[effectiveness[i].id] = -3;
+      });
+    };
+  });
+
+  typeScore.forEach(function(s, index){
+    if( s < 0){resistArray[index] += -1}
+    if( s > 0){weakArray[index] += -1}
+});
+
+  addStats();
 }
