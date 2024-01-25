@@ -9529,5 +9529,165 @@
             "psychic"
         ],
         "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png"
+    },
+    {
+        "id": "dipplin",
+        "name": "Dipplin",
+        "types": [
+            "grass",
+            "dragon"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png"
+    },
+    {
+        "id": "poltchageist",
+        "name": "Poltchageist",
+        "types": [
+            "grass",
+            "ghost"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png"
+    },
+    {
+        "id": "sinistcha",
+        "name": "Sinistcha",
+        "types": [
+            "grass",
+            "ghost"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png"
+    },
+    {
+        "id": "okidogi",
+        "name": "Okidogi",
+        "types": [
+            "poison",
+            "fighting"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png"
+    },
+    {
+        "id": "munkidori",
+        "name": "Munkidori",
+        "types": [
+            "poison",
+            "psychic"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png"
+    },
+    {
+        "id": "dipplin",
+        "name": "Dipplin",
+        "types": [
+            "poison",
+            "fairy"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png"
+    },
+    {
+        "id": "ogerpon",
+        "name": "Ogerpon",
+        "types": [
+            "grass"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png"
+    },
+    {
+        "id": "ogerpon-wellspring",
+        "name": "Ogerpon",
+        "types": [
+            "grass",
+            "water"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10273.png"
+    },
+    {
+        "id": "ogerpon-hearthflame",
+        "name": "Ogerpon",
+        "types": [
+            "grass",
+            "fire"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10274.png"
+    },
+    {
+        "id": "ogerpon-cornerstone",
+        "name": "Ogerpon",
+        "types": [
+            "grass",
+            "rock"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10275.png"
+    },
+    {
+        "id": "archaludon",
+        "name": "Archaludon",
+        "types": [
+            "steel",
+            "dragon"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png"
+    },
+    {
+        "id": "hydrapple",
+        "name": "Hydrapple",
+        "types": [
+            "grass",
+            "dragon"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png"
+    },
+    {
+        "id": "gouging-fire",
+        "name": "Gouging Fire",
+        "types": [
+            "fire",
+            "dragon"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png"
+    },
+    {
+        "id": "raging-bolt",
+        "name": "Raging Bolt",
+        "types": [
+            "electric",
+            "dragon"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png"
+    },
+    {
+        "id": "iron-boulder",
+        "name": "Iron Boulder",
+        "types": [
+            "rock",
+            "psychic"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png"
+    },
+    {
+        "id": "iron-crown",
+        "name": "Iron Crown",
+        "types": [
+            "steel",
+            "psychic"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png"
+    },
+    {
+        "id": "terapagos",
+        "name": "Terapagos",
+        "types": [
+            "normal"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png"
+    },
+    {
+        "id": "pecharunt",
+        "name": "Pecharunt",
+        "types": [
+            "poison",
+            "ghost"
+        ],
+        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png"
     }
 ]
