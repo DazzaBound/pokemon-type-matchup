@@ -9593,7 +9593,7 @@
         "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png"
     },
     {
-        "id": "ogerpon-wellspring",
+        "id": "ogerpon-wellspring-mask",
         "name": "Ogerpon",
         "types": [
             "grass",
@@ -9602,7 +9602,7 @@
         "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10273.png"
     },
     {
-        "id": "ogerpon-hearthflame",
+        "id": "ogerpon-hearthflame-mask",
         "name": "Ogerpon",
         "types": [
             "grass",
@@ -9611,7 +9611,7 @@
         "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10274.png"
     },
     {
-        "id": "ogerpon-cornerstone",
+        "id": "ogerpon-cornerstone-mask",
         "name": "Ogerpon",
         "types": [
             "grass",
