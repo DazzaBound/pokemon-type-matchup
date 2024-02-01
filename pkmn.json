@@ -19638,6 +19638,24 @@
         ]
     },
     {
+    	"id": "ursaluna-bloodmoon",
+    	"name": "Ursaluna",
+    	"types": [
+    		"ground",
+    		"normal"
+    	],
+    	"imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10272.png",
+    	"stats": [
+    		555,
+    		113,
+    		70,
+    		120,
+    		135,
+    		65,
+    		52
+    	]
+    },    
+    {
         "id": "okidogi",
         "name": "Okidogi",
         "types": [
