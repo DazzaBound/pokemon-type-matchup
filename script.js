@@ -365,8 +365,7 @@ i.types.forEach(function(t){
 
 // ADD ROW TO TABLE
 
-  tableCard.innerHTML = "<div class='tableCard'><img class='tableIcon' src="+i.imgUrl+"><div class='tableInfo'><div class='tableName'>"+i.name+"</div><div class='tableType'>"+types+"</div></div></div>";
-  
+  tableCard.innerHTML = "<div class='tableCard'><img class='tableIcon' src="+i.imgUrl+"><div class='tableInfo'><div class='tableName'>"+i.name+"</div><div class='tableType'>"+types+"</div></div><div class='stat push'><b>TOTAL<br>"+i.stats[0]+"</b></div><div class='stat'>HP<br>"+i.stats[1]+"</div><div class='stat'>Atk<br>"+i.stats[2]+"</div><div class='stat'>Def<br>"+i.stats[3]+"</div><div class='stat'>SpA<br>"+i.stats[4]+"</div><div class='stat'>SpD<br>"+i.stats[5]+"</div><div class='stat'>Spe<br>"+i.stats[6]+"</div></div>";
   typeScore.forEach(function(s, index){
       if( s=== -3){tableCard.innerHTML += "<div class='typeEff eff-3'>X</div>"; resistArray[index] += 1}
       if( s=== -2){tableCard.innerHTML += "<div class='typeEff eff-2'>¼</div>"; resistArray[index] += 1}
