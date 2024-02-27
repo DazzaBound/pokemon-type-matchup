@@ -7,6 +7,7 @@ const resultsBox = document.getElementById("results");
 const inputBox = document.getElementById("input");
 let resistArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let weakArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let coverageArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 let excluded = [];
 
@@ -340,22 +341,24 @@ function addPkmn(p) {
 let typeScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 i.types.forEach(function(t){
+  coverageArray[effectiveness[t].id] += 1;
+
   if(effectiveness[t].weak){
     effectiveness[t].weak.forEach(function(w){
+      if(typeScore[effectiveness[w].id] !== -3){
       typeScore[effectiveness[w].id] += 1;
+      }
     });
   };
-});
 
-i.types.forEach(function(t){
   if(effectiveness[t].resist){
     effectiveness[t].resist.forEach(function(r){
+      if(typeScore[effectiveness[r].id] !== -3){
       typeScore[effectiveness[r].id] += -1;
+      }
     });
   };
-});
 
-i.types.forEach(function(t){
   if(effectiveness[t].immune){
     effectiveness[t].immune.forEach(function(i){
       typeScore[effectiveness[i].id] = -3;
@@ -395,9 +398,11 @@ function addStats(){
 
   let resistRow = document.createElement("div");
   let weakRow = document.createElement("div");
+  let typesUsed = document.createElement("div");
   resistRow.innerHTML = "<div class='footerText'>Total Resisted</div>";
   weakRow.innerHTML = "<div class='footerText'>Total Weak</div>";
-  
+  typesUsed.innerHTML = "<div class='footerText'>Types Used</div>";
+
   for(let r of resistArray) {
     let rBold = "";
     if( r > 3 ){rBold = ";font-weight:bold"}
@@ -408,12 +413,15 @@ function addStats(){
     if( w > 3 ){wBold = ";font-weight:bold"}
     if( w > 0 ){weakRow.innerHTML += "<div class='statIcon' style='background:rgba(256,0,0,"+(0.15*w)+")"+wBold+"'>"+w+"</div>"} else {weakRow.innerHTML += "<div class='statIcon'></div>"}
   }
+  for(let c of coverageArray) {
+    if ( c > 0){typesUsed.innerHTML += "<div class='statIcon' style='background:rgba(0,128,0,0.8)'>✔</div>"} else {typesUsed.innerHTML += "<div class='statIcon'></div>"}
+  }
   
-  document.getElementById("tableStats").append(resistRow)
-  document.getElementById("tableStats").append(weakRow)
+  document.getElementById("tableStats").append(resistRow);
+  document.getElementById("tableStats").append(weakRow);
+  document.getElementById("tableStats").append(typesUsed);
 
 }
-
 
 function removePkmn(r) {
   document.getElementById(r).remove();
@@ -430,22 +438,24 @@ function removePkmn(r) {
   let typeScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   i.types.forEach(function(t){
+    coverageArray[effectiveness[t].id] += 1;
+  
     if(effectiveness[t].weak){
       effectiveness[t].weak.forEach(function(w){
+        if(typeScore[effectiveness[w].id] !== -3){
         typeScore[effectiveness[w].id] += 1;
+        }
       });
     };
-  });
   
-  i.types.forEach(function(t){
     if(effectiveness[t].resist){
       effectiveness[t].resist.forEach(function(r){
+        if(typeScore[effectiveness[r].id] !== -3){
         typeScore[effectiveness[r].id] += -1;
+        }
       });
     };
-  });
   
-  i.types.forEach(function(t){
     if(effectiveness[t].immune){
       effectiveness[t].immune.forEach(function(i){
         typeScore[effectiveness[i].id] = -3;
