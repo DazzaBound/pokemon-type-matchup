@@ -438,7 +438,7 @@ function removePkmn(r) {
   let typeScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   i.types.forEach(function(t){
-    coverageArray[effectiveness[t].id] += 1;
+    coverageArray[effectiveness[t].id] -= 1;
   
     if(effectiveness[t].weak){
       effectiveness[t].weak.forEach(function(w){
