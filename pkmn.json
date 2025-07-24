@@ -19638,24 +19638,6 @@
         ]
     },
     {
-    	"id": "ursaluna-bloodmoon",
-    	"name": "Ursaluna",
-    	"types": [
-    		"ground",
-    		"normal"
-    	],
-    	"imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10272.png",
-    	"stats": [
-    		555,
-    		113,
-    		70,
-    		120,
-    		135,
-    		65,
-    		52
-    	]
-    },    
-    {
         "id": "okidogi",
         "name": "Okidogi",
         "types": [
@@ -19889,22 +19871,39 @@
         ]
     },
     {
-        "id": "terapagos",
-        "name": "Terapagos",
-        "types": [
-            "normal"
-        ],
-        "imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png",
-        "stats": [
-            450,
-            90,
-            65,
-            85,
-            65,
-            85,
-            60
-        ]
+	"id": "terapagos-terastal",
+	"name": "Terapagos",
+	"types": [
+		"normal"
+	],
+	"imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10276.png",
+	"stats": [
+		600,
+		95,
+		95,
+		110,
+		105,
+		110,
+		85
+	]
     },
+    {
+	"id": "terapagos-stellar",
+	"name": "Terapagos",
+	"types": [
+		"normal"
+	],
+	"imgUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10277.png",
+	"stats": [
+		700,
+		160,
+		105,
+		110,
+		130,
+		110,
+		85
+	]
+    }, 
     {
         "id": "pecharunt",
         "name": "Pecharunt",
